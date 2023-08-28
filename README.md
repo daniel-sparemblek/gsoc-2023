@@ -4,11 +4,11 @@ This is the official description of a project that took place during the summer 
 
 The following links are the official merged pull request on GitHub, which acts as the main and final deliverable I submitted as part of GSoC 2023. Currently, this links to my mentor's fork of the larger project. This will be updated once a merge to the main repository is done (after code reviews are finished and the internal changelogs are updated).
 
- - https://github.com/javfg/reva/pull/1
- - https://github.com/javfg/cernbox-web/pull/1
+ - [https://github.com/javfg/reva/pull/1](https://github.com/javfg/reva/pull/1)
+ - [https://github.com/javfg/cernbox-web/pull/1](https://github.com/javfg/cernbox-web/pull/1)
 
 This and other projects can be found on my personal GitHub: 
-https://github.com/daniel-sparemblek
+[https://github.com/daniel-sparemblek](https://github.com/daniel-sparemblek)
 
 Up-to-date as of **August 28th, 2023**.
 
@@ -41,8 +41,12 @@ The primary task was to develop the framework so that new settings could easily 
 ### Frontend - Vue JS (TypeScript)
 The current user menu was extended with a button that opens a modal with settings. The default or user-configured settings are loaded into the modal during the initial (or any recurrent) page load. The following is a screenshot of the newly added button, alongside the opened modal.
 
-![frontend_menu](menu.png)
-![frontend_modal](modal.png)
+
+ Menu button             |  Modal
+ :-------------------------:|:-------------------------:
+ ![frontend_menu](menu.jpg)  |  ![frontend_modal](modal.jpg)
+
+
 
 The implementation of the frontend was fairly trivial, a new Modal was created that offered the user the option to disable (or enable) **all** notifications using a simple checkbox. Functions for storing and fetching the notifications settings were also created. This was done using *VueJS 3.0's Composition API*. The `store` function makes an *HTTP PATCH* request to the backend while the `fetch` function makes a *GET* request to fetch the data in an XML format. The parsing of the XML was done using `DOMParser`, but the final parsing will be done using owncloud's SDK.
 
@@ -67,13 +71,13 @@ As the set of extended deliverables mention, the CERNBox platform can also be ex
 
 As mentioned before, a merge to the main repository has still not been done due to this being a more complex process. I will update this file once a merge has been approved and done, but for now, these are the links to the main repositories: 
 
- - https://github.com/cernbox/web
- - https://github.com/cernbox/reva
+ - [https://github.com/cernbox/web](https://github.com/cernbox/web)
+ - [https://github.com/cernbox/reva](https://github.com/cernbox/reva)
 
-Lastly, the documentation will be added as soon as it is approved. It will be hosted on the CERNBox documentation website: https://cernbox.docs.cern.ch/
+Lastly, the documentation will be added as soon as it is approved. It will be hosted on the CERNBox documentation website: [https://cernbox.docs.cern.ch/](https://cernbox.docs.cern.ch/)
 
 # Acknowledgment
 
 I’d like to thank my mentor **Javier Ferrer** for following me throughout the whole project. He has been extremely helpful since the first contact. This project wouldn’t have gone smoothly without his help, encouragement, and enthusiasm.
 
-https://github.com/javfg
+[https://github.com/javfg](https://github.com/javfg)
