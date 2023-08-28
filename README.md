@@ -41,8 +41,8 @@ The primary task was to develop the framework so that new settings could easily 
 ### Frontend - Vue JS (TypeScript)
 The current user menu was extended with a button that opens a modal with settings. The default or user-configured settings are loaded into the modal during the initial (or any recurrent) page load. The following is a screenshot of the newly added button, alongside the opened modal.
 
-![frontend_menu](menu.jpg)
-![frontend_modal](modal.jpg)
+![frontend_menu](menu.png)
+![frontend_modal](modal.png)
 
 The implementation of the frontend was fairly trivial, a new Modal was created that offered the user the option to disable (or enable) **all** notifications using a simple checkbox. Functions for storing and fetching the notifications settings were also created. This was done using *VueJS 3.0's Composition API*. The `store` function makes an *HTTP PATCH* request to the backend while the `fetch` function makes a *GET* request to fetch the data in an XML format. The parsing of the XML was done using `DOMParser`, but the final parsing will be done using owncloud's SDK.
 
