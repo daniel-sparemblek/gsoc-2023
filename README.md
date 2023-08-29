@@ -1,10 +1,6 @@
----
-title: Introduction
----
 # Google Summer of Code 2023 - CERN
 
   
-
 This is the official description of a project that took place during the summer of 2023. I was part of [Google Summer of Code](https://summerofcode.withgoogle.com/) (referred to as GSoC) with [CERN](https://www.home.cern/) as my organization. Officially, during GSoC 2023, [HSF-CERN](https://hepsoftwarefoundation.org/) was the umbrella organization that I applied to. The title of the project was: **Extend and improve the CERNBox Notifications platform**. The following document will describe the initial task, how it changed, what was developed, and what still needs to be done in the future.
 
   
